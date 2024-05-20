@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Tic-Tac-Tou</title>
+</head>
+<body>
+ <section id="game" >
+  <div id="scores">
+   <div id="X-score" class="scores" ><canvas class="icone" id="Xicon" width="80" height="80" ></canvas><div id="X-num" >0</div></div>
+   <div id="O-score" class="scores" ><canvas class="icone" id="Oicon" width="80" height="80" ></canvas><div id="O-num" >0</div></div>
+  </div>
+  <canvas id="cvn" width="320" height="320" onclick="fillBox(event)" > </canvas>
+  <div id="menu">
+    <canvas src="" alt="" id="winnerIco" width="150" height="150" ></canvas>
+    <h1 id="comment" >Win This Round</h1>
+    <div id="btns"><button class="btn" onclick="playAgain()" >Play Again</button><button class="btn" onclick="restarGame()" >Restar Game</button></div>
+  </div>
+ </section>
+ <script src="./src/engine.js" ></script>
+</body>
+</html>
